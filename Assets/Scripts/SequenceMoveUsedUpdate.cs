@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ComplexMoveUsedUpdate : MonoBehaviour
+public class SequenceMoveUsedUpdate : MonoBehaviour
 {
     private enum MoveState
     {
         Right,
         Up,
-        LeftAndRotate,
+        Left,
         End,
     }
 
@@ -42,10 +42,10 @@ public class ComplexMoveUsedUpdate : MonoBehaviour
                 _cube.transform.position = Vector3.MoveTowards(_cube.transform.position, _movedUpEndPosition, 0.1f);
                 if (_cube.transform.position == _movedUpEndPosition)
                 {
-                    _state = MoveState.LeftAndRotate;
+                    _state = MoveState.Left;
                 }
                 break;
-            case MoveState.LeftAndRotate:
+            case MoveState.Left:
                 _cube.transform.position = Vector3.MoveTowards(_cube.transform.position, _movedLeftEndPosition, 0.1f);
                 if (_cube.transform.position == _movedLeftEndPosition)
                 {
