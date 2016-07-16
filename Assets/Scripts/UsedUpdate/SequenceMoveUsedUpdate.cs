@@ -11,7 +11,7 @@ public class SequenceMoveUsedUpdate : MonoBehaviour
         End,
     }
 
-    [SerializeField] private GameObject _cube;
+    private GameObject _cube;
 
     private MoveState _state;
 
@@ -23,6 +23,7 @@ public class SequenceMoveUsedUpdate : MonoBehaviour
 
     private void Start()
     {
+        _cube = this.gameObject;
         _cube.transform.position = new Vector3(0, 0, 0);
         _state = MoveState.Right;
     }

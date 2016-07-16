@@ -5,17 +5,11 @@
 /// </summary>
 public class SimpleMoveUsedUpdate : MonoBehaviour
 {
-    private enum MoveState
-    {
-        Right,
-        Up,
-        Left,
-    }
-
-    [SerializeField] private GameObject _cube;
+    private GameObject _cube;
 
     private void Start()
     {
+        _cube = this.gameObject;
         _cube.transform.position = new Vector3(0, 0, 0);
     }
 
