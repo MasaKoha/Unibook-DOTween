@@ -32,3 +32,5 @@ sysinfo.txt
 # ignore AssetStore
 Assets/Demigiant
 Demigiant.meta
+DOTweenSettings.asset
+DOTweenSettings.asset.meta
