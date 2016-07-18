@@ -7,6 +7,7 @@ public class MoveX : MonoBehaviour
     private void Start()
     {
         DOTween.Init();
-        DOTween.Sequence().Append(this.transform.DOMoveX(3, 1));
+        DOTween.Sequence()
+            .Append(this.transform.DOMoveX(3, 1));
     }
 }
