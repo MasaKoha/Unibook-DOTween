@@ -13,8 +13,14 @@ public class MultiSequence : MonoBehaviour
     /// </summary>
     [SerializeField] private Image[] _bars;
 
+    /// <summary>
+    /// それぞれのバーの初期位置
+    /// </summary>
     private Vector3[] _barsInitScale;
 
+    /// <summary>
+    /// それぞれのバーの初期カラー
+    /// </summary>
     private Color[] _barsInitColor;
 
     /// <summary>
