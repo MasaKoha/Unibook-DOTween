@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+
+// DOTween を使用するときは DG.Tweening を using に入れる
 using DG.Tweening;
 
 public class SimpleMove : MonoBehaviour
